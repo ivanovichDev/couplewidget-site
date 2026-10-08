@@ -24,6 +24,7 @@ function show() {
     if (a.getAttribute('href') === '#' + ids[i]) a.setAttribute('aria-current', 'page');
     else a.removeAttribute('aria-current');
   });
+  document.body.classList.toggle('inner', i !== 0);
   document.title = titles[i];
   setMenu(false);
 }
