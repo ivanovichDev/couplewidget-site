@@ -1,6 +1,0 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>body{margin:0;font:28px monospace;background:#fff;color:#000}#p{position:fixed;inset:0;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom);}
-.a{position:fixed;top:0;left:0;right:0;height:6px;background:red}.b{position:fixed;bottom:0;left:0;right:0;height:6px;background:blue}
-.s{position:fixed;left:0;width:30px;height:100svh;top:0;background:rgba(0,200,0,.5)}.l{position:fixed;right:0;width:30px;height:100lvh;top:0;background:rgba(255,160,0,.5)}.d{position:fixed;right:40px;width:30px;height:100dvh;top:0;background:rgba(0,0,255,.4)}
-#t{position:fixed;left:40px;top:150px}</style></head><body><div class="a"></div><div class="b"></div><div class="s"></div><div class="l"></div><div class="d"></div><div id="p"></div><div id="t"></div>
-<script>function f(){var e=document.getElementById('p');var cs=getComputedStyle(e);document.getElementById('t').innerHTML=['inner '+innerWidth+'x'+innerHeight,'vv '+Math.round(visualViewport.height),'client '+document.documentElement.clientHeight,'screen '+screen.height,'padTop '+cs.paddingTop,'padBot '+cs.paddingBottom,'dpr '+devicePixelRatio].join('<br>')}f();addEventListener('resize',f);setTimeout(f,500)</script></body></html>
