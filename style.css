@@ -98,10 +98,10 @@ body.app{position:fixed;inset:0;height:auto;overflow:hidden;display:block;backgr
 .panel{position:relative;flex-shrink:0;width:25%;height:100%;overflow-x:hidden;overflow-y:auto;transition:opacity .6s ease,transform .7s cubic-bezier(0.65,0,0.35,1),visibility 0s linear 0s}
 .panel[aria-hidden="true"]{opacity:.4;transform:scale(0.94);visibility:hidden;transition:opacity .6s ease,transform .7s cubic-bezier(0.65,0,0.35,1),visibility 0s linear .7s}
 .panel .page{min-height:100%}
-.panel .home{height:100cqh;min-height:0}
-#panel-home{container-type:size}
-.home-wrap{position:relative}
-.home-links{position:relative;z-index:2;padding-top:96px}
+.panel .home{height:100%;min-height:0}
+#panel-home{overflow-y:hidden}
+.home-wrap{position:relative;height:100%}
+.home-links{position:absolute;left:0;right:0;bottom:0;z-index:2;padding-top:96px}
 .foot-blurs,.foot-tint{position:absolute;inset:0;pointer-events:none}
 .foot-blurs div{position:absolute;inset:0}
 .foot-tint{background:linear-gradient(180deg,rgba(255,255,255,0) 20%,rgba(255,255,255,0.5) 100%)}
