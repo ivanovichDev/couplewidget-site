@@ -93,7 +93,7 @@ body.inner .frost{opacity:1}
 .blur4{-webkit-mask-image:radial-gradient(min(80vw,340px) min(72vw,310px) at 50% 52%,#000 0%,rgba(0,0,0,0) 45%);mask-image:radial-gradient(min(80vw,340px) min(72vw,310px) at 50% 52%,#000 0%,rgba(0,0,0,0) 45%)}
 .tint{background:radial-gradient(min(80vw,340px) min(72vw,310px) at 50% 52%,rgba(255,255,255,0.55) 0%,rgba(255,255,255,0.4) 50%,rgba(255,255,255,0) 100%)}
 }
-body.app{position:fixed;inset:0;height:auto;overflow:hidden;display:block;background-attachment:scroll}
+body.app{position:fixed;inset:0;height:auto;min-height:0;overflow:hidden;display:block;background-attachment:scroll}
 .track{position:relative;z-index:1;display:flex;width:400%;height:100%;transform:translateX(0);transition:transform .7s cubic-bezier(0.65,0,0.35,1)}
 .panel{position:relative;flex-shrink:0;width:25%;height:100%;overflow-x:hidden;overflow-y:auto;transition:opacity .6s ease,transform .7s cubic-bezier(0.65,0,0.35,1),visibility 0s linear 0s}
 .panel[aria-hidden="true"]{opacity:.4;transform:scale(0.94);visibility:hidden;transition:opacity .6s ease,transform .7s cubic-bezier(0.65,0,0.35,1),visibility 0s linear .7s}

@@ -44,12 +44,3 @@ form.addEventListener('submit', function (e) {
   form.hidden = true;
   document.getElementById('sent').hidden = false;
 });
-if (location.search.indexOf('debug') > -1) {
-  var d = document.createElement('div');
-  d.style.cssText = 'position:fixed;z-index:99;left:8px;top:150px;background:#fff;color:#000;font:20px monospace;padding:6px;white-space:pre';
-  document.body.appendChild(d);
-  setInterval(function () {
-    var q = function (s) { var r = document.querySelector(s).getBoundingClientRect(); return Math.round(r.top) + '-' + Math.round(r.bottom); };
-    d.textContent = ['inner ' + innerHeight, 'body ' + q('body'), 'track ' + q('.track'), 'panel ' + q('#panel-home'), 'wrap ' + q('.home-wrap'), 'links ' + q('.home-links'), 'foot ' + q('.home-links .foot')].join('\n');
-  }, 500);
-}
