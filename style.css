@@ -101,5 +101,6 @@ body.app{position:fixed;inset:0;height:auto;overflow:hidden;display:block;backgr
 .panel[aria-hidden="true"]{opacity:.4;transform:scale(0.94);visibility:hidden;transition:opacity .6s ease,transform .7s cubic-bezier(0.65,0,0.35,1),visibility 0s linear .7s}
 .panel .page{min-height:100%}
 .panel .home{height:100%;min-height:0}
-#panel-home{overflow-y:hidden;background:radial-gradient(40% 70% at 12% 0%,var(--bg-glow) 0%,rgba(239,159,178,0) 70%),radial-gradient(40% 70% at 88% 0%,var(--bg-glow) 0%,rgba(239,159,178,0) 70%),linear-gradient(178deg,var(--bg-top) 0%,var(--rose-strong) 100%)}
+.home-links{padding-top:32px}
+#panel-home{background:radial-gradient(40% 70% at 12% 0%,var(--bg-glow) 0%,rgba(239,159,178,0) 70%),radial-gradient(40% 70% at 88% 0%,var(--bg-glow) 0%,rgba(239,159,178,0) 70%),linear-gradient(178deg,var(--bg-top) 0%,var(--rose-strong) 100%)}
 @media (prefers-reduced-motion:reduce){.row{animation:none!important}.track,.panel{transition:none!important}}
